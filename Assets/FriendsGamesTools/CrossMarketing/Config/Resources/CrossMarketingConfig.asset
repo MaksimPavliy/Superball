@@ -1,0 +1,204 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f48a4244ad9e0c0449affc14fed7f7d9, type: 3}
+  m_Name: CrossMarketingConfig
+  m_EditorClassIdentifier: 
+  data:
+  - id: 0
+    appName: Airport 737
+    appleID: 1479743552
+    androidPackageId: com.friendsgamesincubator.airportidle
+    icon: {fileID: 21300000, guid: 09f00fad96e2c5c4d966388992c612af, type: 3}
+    showIOS: 1
+    showAndroid: 1
+  - id: 1
+    appName: River Love
+    appleID: 1559740866
+    androidPackageId: com.friendsgamesincubator.riverlove3d
+    icon: {fileID: 21300000, guid: 879d1523c341b534a8ab99612e7eef68, type: 3}
+    showIOS: 1
+    showAndroid: 1
+  - id: 2
+    appName: Door Knocker
+    appleID: ????????
+    androidPackageId: com.friendsgamesincubator.doorknocker
+    icon: {fileID: 21300000, guid: d73e0c387b576f941ad2ccfbeb4909fb, type: 3}
+    showIOS: 1
+    showAndroid: 1
+  - id: 3
+    appName: Seaport Manager 3D
+    appleID: ????????
+    androidPackageId: com.friendsgamesincubator.seaportmanager3d
+    icon: {fileID: 21300000, guid: fdc69ad4e6852d546afc528bd7cde800, type: 3}
+    showIOS: 1
+    showAndroid: 1
+  - id: 4
+    appName: Paper Games 3D
+    appleID: ????????
+    androidPackageId: com.friendsgamesincubator.papergames
+    icon: {fileID: 21300000, guid: 928debd712b8eca4fa3eb1d6d78fd7e4, type: 3}
+    showIOS: 1
+    showAndroid: 1
+  - id: 5
+    appName: "Don\u2019t Touch Walls"
+    appleID: ????????
+    androidPackageId: com.friendsgamesincubator.donttouchwalls
+    icon: {fileID: 21300000, guid: 245587e699987f248ace86976b393257, type: 3}
+    showIOS: 1
+    showAndroid: 1
+  - id: 6
+    appName: Idle Restaurant - Tycoon Magnat
+    appleID: 1485841462
+    androidPackageId: com.friendsgamesincubator.restaurantidle
+    icon: {fileID: 21300000, guid: 43c15e89b1c11cf4097f92c09a577681, type: 3}
+    showIOS: 1
+    showAndroid: 1
+  - id: 7
+    appName: Bounce Balance
+    appleID: 1497073817
+    androidPackageId: com.friendsgamesincubator.bouncebalance
+    icon: {fileID: 21300000, guid: 0f2f384b229c4f64db51e706c7424de2, type: 3}
+    showIOS: 1
+    showAndroid: 1
+  - id: 8
+    appName: Ski Resort Idle
+    appleID: ????????
+    androidPackageId: com.friendsgamesincubator.skiresortidle
+    icon: {fileID: 21300000, guid: 6061a29936c96ff47b1094a1753a369b, type: 3}
+    showIOS: 1
+    showAndroid: 1
+  - id: 9
+    appName: Flip Lab
+    appleID: 1495153724
+    androidPackageId: com.friendsgamesincubator.fliplab
+    icon: {fileID: 21300000, guid: 04e0c61f20ce60d4bbf1734b55da16eb, type: 3}
+    showIOS: 1
+    showAndroid: 1
+  - id: 10
+    appName: "Draw The Line 3\u202AD"
+    appleID: 1541146937
+    androidPackageId: ????????
+    icon: {fileID: 21300000, guid: 2d042c9d85d3c3e4d80a05d3cad4a1f9, type: 3}
+    showIOS: 1
+    showAndroid: 1
+  - id: 11
+    appName: "Draw Your Weapon 3\u202AD\u202C"
+    appleID: 1557241630
+    androidPackageId: ????????
+    icon: {fileID: 21300000, guid: db65ff2b0c986d249b207534576d6782, type: 3}
+    showIOS: 1
+    showAndroid: 1
+  - id: 12
+    appName: "Paint O\u202An\u202C "
+    appleID: 1556833570
+    androidPackageId: ????????
+    icon: {fileID: 21300000, guid: 04ad22af4a4336b4b802fcb748ead309, type: 3}
+    showIOS: 1
+    showAndroid: 1
+  - id: 13
+    appName: "Idle Paleontolog\u202Ay\u202C "
+    appleID: 1485571792
+    androidPackageId: ????????
+    icon: {fileID: 21300000, guid: 978a6de4dfb0dbd47a3300fe5da62647, type: 3}
+    showIOS: 1
+    showAndroid: 1
+  - id: 14
+    appName: "ToPizz\u202Aa\u202C "
+    appleID: 1472993252
+    androidPackageId: ????????
+    icon: {fileID: 21300000, guid: a4d68185a19178e42a1f9cb799ea795f, type: 3}
+    showIOS: 1
+    showAndroid: 1
+  - id: 15
+    appName: "Robotics Idl\u202Ae"
+    appleID: 1517197396
+    androidPackageId: ????????
+    icon: {fileID: 21300000, guid: 72d66eddba1d5d4479bd445de00d0850, type: 3}
+    showIOS: 1
+    showAndroid: 1
+  - id: 16
+    appName: "Bank Robbery 3\u202AD\u202C "
+    appleID: 1546265257
+    androidPackageId: ????????
+    icon: {fileID: 21300000, guid: 825f6bdd74b6edf4bb45eff5e0c7277b, type: 3}
+    showIOS: 1
+    showAndroid: 1
+  - id: 17
+    appName: "Ski.io - Snowball Rus\u202Ah\u202C"
+    appleID: 1500742925
+    androidPackageId: ????????
+    icon: {fileID: 21300000, guid: f3e42a0a1f1a75345aaa580908befc9b, type: 3}
+    showIOS: 1
+    showAndroid: 1
+  - id: 18
+    appName: "Match 3 Train\u202As"
+    appleID: 1536647190
+    androidPackageId: ????????
+    icon: {fileID: 21300000, guid: 72478d9a33ed9a744a9968a1e60b69d4, type: 3}
+    showIOS: 1
+    showAndroid: 1
+  - id: 19
+    appName: "Police Parkour 3\u202AD\u202C"
+    appleID: 1545606142
+    androidPackageId: ????????
+    icon: {fileID: 21300000, guid: 6c221c36dde2ea04999ce658e7ded983, type: 3}
+    showIOS: 1
+    showAndroid: 1
+  - id: 20
+    appName: "Racing Manager 3\u202AD\u202C"
+    appleID: 1548755951
+    androidPackageId: ????????
+    icon: {fileID: 21300000, guid: 5bb82093b8f04844eb3dc498e8608469, type: 3}
+    showIOS: 1
+    showAndroid: 1
+  - id: 21
+    appName: "Matryoshka Jumpe\u202Ar"
+    appleID: 1531951385
+    androidPackageId: ????????
+    icon: {fileID: 21300000, guid: 0939a0730f3fdc040a86f242fc93ed40, type: 3}
+    showIOS: 1
+    showAndroid: 1
+  - id: 22
+    appName: "Wave Rush Runne\u202Ar\u202C "
+    appleID: 1536146922
+    androidPackageId: ????????
+    icon: {fileID: 21300000, guid: cb496452d54434540a60e36dd3bf8edb, type: 3}
+    showIOS: 1
+    showAndroid: 1
+  - id: 23
+    appName: "Archers Arena 3\u202AD"
+    appleID: 1548696831
+    androidPackageId: ????????
+    icon: {fileID: 21300000, guid: 005c23b8c5d49b847b2f742d207841b3, type: 3}
+    showIOS: 1
+    showAndroid: 1
+  - id: 24
+    appName: "Cube World Taxi 3\u202AD\u202C"
+    appleID: 1540089651
+    androidPackageId: ????????
+    icon: {fileID: 21300000, guid: 6a148037f74c5154bb0e69fa1b6c1691, type: 3}
+    showIOS: 1
+    showAndroid: 1
+  - id: 25
+    appName: "Catapult Cat o pul\u202At\u202C"
+    appleID: 1500916322
+    androidPackageId: ????????
+    icon: {fileID: 21300000, guid: 83e7d67f5f0b22947abd479998a6d4cb, type: 3}
+    showIOS: 1
+    showAndroid: 1
+  - id: 26
+    appName: "Bee Bee 3\u202AD"
+    appleID: 1547668365
+    androidPackageId: ????????
+    icon: {fileID: 21300000, guid: c61c3e5feb21e904ebb399bb67a9ceea, type: 3}
+    showIOS: 1
+    showAndroid: 1

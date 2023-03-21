@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59537a25f3234bd428ae05c62d2243a6, type: 3}
+  m_Name: ScreenshotsSettings
+  m_EditorClassIdentifier: 
+  autoTakeScreenshotDelay: 10
+  autoScreenshotsEnabled: 0
+  selected: 0
+  iosScreens:
+  - name: 6.5-inch iPhones
+    desc: 'highest resolution - iPhone 12 Pro MAX '
+    resolution: {x: 1284, y: 2778}
+    margins:
+      topMargin: 120
+      bottomMargin: 120
+      leftMargin: 120
+      rightMargin: 120
+  - name: 5.5-inch iPhones (rendered)
+    desc: 6S+, 7+, 8+ rendered resolution, not screen
+    resolution: {x: 1242, y: 2208}
+    margins:
+      topMargin: 0
+      bottomMargin: 0
+      leftMargin: 0
+      rightMargin: 0
+  - name: 12.9-inch iPad (2-gen)
+    desc: iPad Pro
+    resolution: {x: 2048, y: 2732}
+    margins:
+      topMargin: 0
+      bottomMargin: 0
+      leftMargin: 0
+      rightMargin: 0
+  - name: 12.9-inch iPad (3-gen)
+    desc: iPad Pro
+    resolution: {x: 2048, y: 2732}
+    margins:
+      topMargin: 0
+      bottomMargin: 0
+      leftMargin: 0
+      rightMargin: 0
+  androidScreens:
+  - name: common android screen
+    desc: 
+    resolution: {x: 1080, y: 1920}
+    margins:
+      topMargin: 0
+      bottomMargin: 0
+      leftMargin: 0
+      rightMargin: 0

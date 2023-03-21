@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4572678608203762174
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5181004014154857245}
+  - component: {fileID: 8585065174973590761}
+  m_Layer: 5
+  m_Name: ConfigEditorPrefabs
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &5181004014154857245
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4572678608203762174}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 1, y: 1}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &8585065174973590761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4572678608203762174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d6c9cd83e6f2264da8f399ec86d8d83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boolPrefab: {fileID: 6865727597896110791, guid: ce7d4a1240ecb1a43a8c5ec72312033a,
+    type: 3}
+  floatPrefab: {fileID: 1546713956727923628, guid: 7d149828bbad8674c9cb20640a42efcd,
+    type: 3}
+  doublePrefab: {fileID: 7371300907124043692, guid: b4013c7ee73249c418cbcb64084dc19e,
+    type: 3}
+  intPrefab: {fileID: 5852591369855637099, guid: 3de4d3216f740d542870d92950dd95af,
+    type: 3}
+  labelPrefab: {fileID: 9061232547106229038, guid: 3229458c7db0441a3b7596031ade7898,
+    type: 3}

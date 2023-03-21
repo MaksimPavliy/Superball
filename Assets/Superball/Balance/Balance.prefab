@@ -1,0 +1,448 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2040808073
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2040808074}
+  - component: {fileID: 2040808075}
+  m_Layer: 0
+  m_Name: LevelConfig
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2040808074
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2040808073}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 7470818063435640811}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2040808075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2040808073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0478d4521f9775144bd2f41bbda91a17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startLength: 15
+  lengthInc: 10
+  maxLevelHeight: 200
+  pipeBiasX_Base_min: 7
+  pipeBiasX_Base_max: 7
+  pipeBiasY_Base_min: -3
+  pipeBiasY_Base_max: 5
+  pipeBiasX_perPipeIncrement_min: 0.1
+  pipeBiasX_perPipeIncrement_max: 0.2
+  pipeBiasY_perPipeIncrement_min: 0.1
+  pipeBiasY_perPipeIncrement_max: 0.5
+  pipeBiasX_perLevelIncrement_min: 0
+  pipeBiasX_perLevelIncrement_max: 0.2
+  pipeBiasY_perLevelIncrement_min: 0.1
+  pipeBiasY_perLevelIncrement_max: 0.7
+  pipeBiasX_limit: 20
+  pipeBiasY_limit: 25
+  obstaclePatrolSpeed_min: 1
+  obstaclePatrolSpeed_max_coef: 0.14
+  obstaclesStartLevel: 4
+  obstacleChance_offset: 0.1
+  obstacleChance_coef: 0.05
+  obstacleChance_clampMin: 0
+  obstacleChance_clampMax: 0.7
+  pipeBound_top: 100
+  pipeBound_bottom: 2
+--- !u!1 &183105470944372673
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2555181155472067764}
+  - component: {fileID: 4780793588538671637}
+  m_Layer: 0
+  m_Name: MoneySkinConfig
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2555181155472067764
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 183105470944372673}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 3912120632031306290}
+  m_Father: {fileID: 7470818063435640811}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4780793588538671637
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 183105470944372673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab7fea2016cc241eaac20c264136b3b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  priceBase: 200
+  priceMul: 2
+--- !u!1 &2044014746687101606
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7799714765292175144}
+  - component: {fileID: 7804915220599632588}
+  m_Layer: 0
+  m_Name: BallConfig
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7799714765292175144
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2044014746687101606}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 7470818063435640811}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7804915220599632588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2044014746687101606}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57465fcc40f12bd45ad276bda4a78bf3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controlSensitity: 10
+  samePipeSpeedMultiplier: 1.2
+--- !u!1 &3280794377683250495
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3912120632031306290}
+  - component: {fileID: 7223800338235609400}
+  m_Layer: 0
+  m_Name: MoneySkinsViewConfig
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3912120632031306290
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3280794377683250495}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2555181155472067764}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7223800338235609400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3280794377683250495}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06bd9269a77c843379b9c63746bbbe69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  items:
+  - ico: {fileID: 21300000, guid: 2b901a9df40a38c41bd866135c7dc3da, type: 3}
+    startUnlocked: 1
+  - ico: {fileID: 21300000, guid: a9132f65df069bc4883975ac47c2e684, type: 3}
+    startUnlocked: 0
+  - ico: {fileID: 21300000, guid: 8dfca4ae539c30f409d0f75224f3bb12, type: 3}
+    startUnlocked: 0
+  - ico: {fileID: 21300000, guid: b12caef839d05aa4d826d093cb3a01cf, type: 3}
+    startUnlocked: 0
+  - ico: {fileID: 21300000, guid: a000df8be8b31e440b78009bece5ec48, type: 3}
+    startUnlocked: 0
+  - ico: {fileID: 21300000, guid: 0406621cb019a984cb6ab4a26e2c094a, type: 3}
+    startUnlocked: 0
+  - ico: {fileID: 21300000, guid: b12caef839d05aa4d826d093cb3a01cf, type: 3}
+    startUnlocked: 0
+  - ico: {fileID: 21300000, guid: 93d4ab928a58c814abec798b691fdf42, type: 3}
+    startUnlocked: 0
+  - ico: {fileID: 21300000, guid: bcceff566a4cfa648bddbcaa63ee12e0, type: 3}
+    startUnlocked: 0
+--- !u!1 &3870379172287372395
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4226573866616823924}
+  - component: {fileID: 6331735243148716092}
+  m_Layer: 0
+  m_Name: ProgressSkinsViewConfig
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4226573866616823924
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3870379172287372395}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 188754996823289159}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6331735243148716092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3870379172287372395}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7049308b670a4535b5077c13b6d34ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  items:
+  - ico: {fileID: 21300000, guid: e5c04fbf69177804995700cf2d803785, type: 3}
+    startUnlocked: 1
+    icoFilled: {fileID: 21300000, guid: 60f26b70c288ee44abeddb98e6d663da, type: 3}
+  - ico: {fileID: 21300000, guid: e5c04fbf69177804995700cf2d803785, type: 3}
+    startUnlocked: 0
+    icoFilled: {fileID: 21300000, guid: 60f26b70c288ee44abeddb98e6d663da, type: 3}
+  - ico: {fileID: 21300000, guid: e5c04fbf69177804995700cf2d803785, type: 3}
+    startUnlocked: 0
+    icoFilled: {fileID: 21300000, guid: 60f26b70c288ee44abeddb98e6d663da, type: 3}
+--- !u!1 &7470818062114265918
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7470818062114265917}
+  - component: {fileID: 7711299062076125996}
+  m_Layer: 0
+  m_Name: "H\u0421MoneyConfig"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7470818062114265917
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7470818062114265918}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 7470818063435640811}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7711299062076125996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7470818062114265918}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5e3511cff5b44a9280135bf89c8b477, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelWinMoneyBase: 50
+  levelWinMoneyCoef: 0
+--- !u!1 &7470818063435640804
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7470818063435640811}
+  m_Layer: 0
+  m_Name: Balance
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7470818063435640811
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7470818063435640804}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 8831740471648055048}
+  - {fileID: 7470818062114265917}
+  - {fileID: 2555181155472067764}
+  - {fileID: 188754996823289159}
+  - {fileID: 2040808074}
+  - {fileID: 7799714765292175144}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &7545215051826845267
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 188754996823289159}
+  - component: {fileID: 2351206282675540129}
+  m_Layer: 0
+  m_Name: ProgressSkinConfig
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &188754996823289159
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7545215051826845267}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4226573866616823924}
+  m_Father: {fileID: 7470818063435640811}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2351206282675540129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7545215051826845267}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0df2f10ed38e425ea0afe6ff16acc95, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  percentsPerLevelMin: 20
+  percentsPerLevelMax: 40
+--- !u!1 &8175258833091337506
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8831740471648055048}
+  - component: {fileID: 5401722689640920027}
+  m_Layer: 0
+  m_Name: "H\u0421GeneralConfig "
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8831740471648055048
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8175258833091337506}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 7470818063435640811}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5401722689640920027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8175258833091337506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b6f544e9048f9b4b87d3042a9009854, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CameraIndex: 0

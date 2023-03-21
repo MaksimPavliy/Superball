@@ -1,0 +1,3 @@
+[submodule "Assets/FriendsGamesTools"]
+	path = Assets/FriendsGamesTools
+	url = git@bitbucket.org:friendsgamesincubator/friendsgamestools.git

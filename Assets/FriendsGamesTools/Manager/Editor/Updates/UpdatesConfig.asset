@@ -1,0 +1,378 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da3a7d8448fecd24ebd7138f30d8cf99, type: 3}
+  m_Name: UpdatesConfig
+  m_EditorClassIdentifier: 
+  changes:
+  - AffectedModule: ECS_LOCATIONS
+    whatsChanged: made usage simpler. Allow enable/disable prefabs instead of Instantiate/destroy
+    upgradeGuide: 'overriden LocationsController.gameRoot is no longer needed, remove
+      it
+
+      overriden LocationsView.controller is no longer needed, remove it
+
+      set
+      LocationsView.mode to instantiate/destroy locations prefabs or just enable/disable
+      locations gameobjects'
+    guid: 9d922771-7dbb-4ea7-bcbc-8fef16a21d1e
+  - AffectedModule: ECS_GAMEROOT
+    whatsChanged: Ensure nobody accidentally forget to turn on save/load for release
+    upgradeGuide: "save/load always ON when release mode. So checkboxes in GameRoot
+      now only affect develop mode. \r\nAlso release mode is by default on mac."
+    guid: b4f9bd07-8203-4f29-811f-c04bdf986b46
+  - AffectedModule: ECS_BONUS
+    whatsChanged: showing ads for bonus events made easy.
+    upgradeGuide: just derive view from BonusEventView<TBonus, TAds> instead of BonusEventView<TBonus>
+    guid: c7b36b81-dea8-4ebc-861b-7a55837f67f5
+  - AffectedModule: ECSGame
+    whatsChanged: Version renamed to DataVersion
+    upgradeGuide: "So you wont mess it up with version visible to players (F.E.:
+      v1.7).\r\nDataVersion is version of data structures used for player's game
+      save. Its single number (F.E.: v23)\r\nDelete your old Assets\\FriendsGamesToolsGenerated\\Resources\\Version.asset,
+      \r\nenter current version to Assets\\FriendsGamesToolsGenerated\\Resources\\DataVersion.asset"
+    guid: ac6c765a-60ee-4dbb-84a8-3562d493d066
+  - AffectedModule: ECS_AB_TEST
+    whatsChanged: created UI for editing AB-tests. No need for coding in this module
+    upgradeGuide: you can edit AB-tests from module UI. It generates all needed code.
+      Remove your derived controller
+    guid: d5a1faee-9f4c-4471-80e7-0ce5bdf77f22
+  - AffectedModule: ADS
+    whatsChanged: ads source is now set from UI
+    upgradeGuide: select ads source from module UI and delete adsSource override
+      from code
+    guid: d0e6beef-c8e2-4ff7-a351-ae8218e36c30
+  - AffectedModule: ECS_BONUS
+    whatsChanged: maxSimultaneousBonusEvents added
+    upgradeGuide: you can now override this attribute to cap simultaneous bonus events
+    guid: 553e1ba9-3af1-426c-971a-5f6da1428d73
+  - AffectedModule: PLUGINS
+    whatsChanged: use SimpleAnimation when Animator is too much
+    upgradeGuide: it just has methods like Play() and Stop()
+    guid: 5931f410-fdc6-4c4b-beac-9afc7ad9c82f
+  - AffectedModule: ALL
+    whatsChanged: ECSGame->RATE_APP_ADVANCED module added
+    upgradeGuide: ' implements standad feedback for all games'
+    guid: eefb14de-94f2-4de4-9504-623d242658e2
+  - AffectedModule: ALL
+    whatsChanged: you can now outline 3D-objects - look for Outlinable class in OTHER
+      module doc
+    upgradeGuide: 
+    guid: 4daab187-3cc8-4953-8815-9a3e634a9113
+  - AffectedModule: ECS_GAMEROOT
+    whatsChanged: controllers changed - you can optimize making updates less frequent,
+      no more ControllerInstance needed
+    upgradeGuide: 'remove all [ControllerInstance] attributes - they are not needed
+      anymore
+
+      you can also get controller instances using root.Get<T>() where
+      T is your controller type
+
+      you can override updateEvery and make controllers
+      update less frequently
+
+      every controller knows time rom previous update
+      - use deltaTime'
+    guid: eaa8f830-d343-4dcb-ad17-14298eaf3dfa
+  - AffectedModule: ALL
+    whatsChanged: standard MiniJSON plugin added to PLUGINS module
+    upgradeGuide: 
+    guid: 8ad8f50b-1ff4-4d7b-95b7-d7424ca0f040
+  - AffectedModule: ECS_PLAYER_MONEY
+    whatsChanged: durable multipliers added - just call AddMultiplier(multiplier,
+      seconds)
+    upgradeGuide: 
+    guid: 5454ec0d-7fb4-41dc-8eb9-860610fce551
+  - AffectedModule: DEBUG_CONFIG
+    whatsChanged: debug config now completely automatically generates all tabs and
+      buttons for editing config
+    upgradeGuide: 'balance scripts should now be inherited from BalanceSettings<T>
+
+      remove
+      your old config editing from debug panel
+
+      enable new config editing as
+      DEBUG_CONFIG full doc suggests'
+    guid: fbc35279-01fc-4b08-9d0a-433cb9423fb6
+  - AffectedModule: ADS
+    whatsChanged: WatchAdButtonView added - it respects ads availability correctly
+    upgradeGuide: use WatchAdButtonView for all buttons that give smth for reward
+    guid: e611d57f-9071-477d-8fc9-2e4bedadf912
+  - AffectedModule: ALL
+    whatsChanged: ECS_INCOME_FOR_VIDEO module added
+    upgradeGuide: 
+    guid: bd96e6d7-8092-47e3-a3da-d00cb8d4c0dc
+  - AffectedModule: ADS
+    whatsChanged: X1X3EarningView added - allows to give something x1 free and x3
+      for ad
+    upgradeGuide: 
+    guid: 0d1cdf71-3f26-4424-b506-fbce736ceba7
+  - AffectedModule: ALL
+    whatsChanged: ECS_ACTIVE_IDLE_SPEEDUP module added - press on something and speed
+      it up
+    upgradeGuide: 
+    guid: 2c22d493-531e-48cb-b58a-d0b218a6aa93
+  - AffectedModule: ECS_SAVE_MIGRATION
+    whatsChanged: now migration shows 'what's new' window
+    upgradeGuide: set prefab for this window in module UI
+    guid: 5b6392b9-0420-4b64-88c1-518d456e50d1
+  - AffectedModule: MAX_SDK
+    whatsChanged: max sdk has slow migration that is executed each code recompile
+      - its now removed
+    upgradeGuide: go to module ui and it will automatically change code
+    guid: d131e1e7-4218-4424-9bae-c514a034669c
+  - AffectedModule: ADS
+    whatsChanged: ads settings are now set in module UI
+    upgradeGuide: remove ads source from AdsManager - its now in settings
+    guid: 30463a0a-12c6-4fd3-b11b-b61e8b37dc43
+  - AffectedModule: ALL
+    whatsChanged: CHROMA_KEY module added
+    upgradeGuide: 
+    guid: d3140f32-cd44-4937-87cd-0ef676dc7059
+  - AffectedModule: ECS_SAVE_MIGRATION
+    whatsChanged: migration now test itself by migrating all old versions to current
+      one
+    upgradeGuide: you have to set player saves for each version, refer to updted
+      docs
+    guid: b813b40b-2591-411b-a10e-d8b72225f3c8
+  - AffectedModule: TUTORIAL
+    whatsChanged: tutorial now have settings to be on/off - in module UI and in debug
+      panel ECS tab
+    upgradeGuide: 
+    guid: 8422705b-3d6e-4ef8-b5b0-72547bc6564a
+  - AffectedModule: ALL
+    whatsChanged: GameTime added - pause/unpause soft and instant, set speed for
+      debug. works with o without ECS
+    upgradeGuide: 
+    guid: 0df7dd5a-d247-44f9-b827-869d3fc0fcfc
+  - AffectedModule: UI
+    whatsChanged: use UI.pressEnabled in tutorial to enable/disable input
+    upgradeGuide: 
+    guid: 9b6e3ebe-d981-4c26-aa83-7d72e8456cd9
+  - AffectedModule: ECS_LOCATIONS
+    whatsChanged: LocationView script exists now - use it when you need any view
+      functionality
+    upgradeGuide: derive your locations view script from LocationsView<TLocationView,
+      TChangeLocationWindow> instead of old LocationsView<TChangeLocationWindow>
+    guid: 8bc3108b-9deb-4d9b-90d0-8422c7dd3706
+  - AffectedModule: CAMERA
+    whatsChanged: touches separated to its own module. Camera depend on it now
+    upgradeGuide: turn on TOUCHES module
+    guid: 6954e872-8cd1-4fb4-bc1f-ec27e925a81c
+  - AffectedModule: ALL
+    whatsChanged: New debug panel - just drag it to scene and it works
+    upgradeGuide: "you have to delete your old debug panel. \ngo to DebugPanel module
+      UI and check settings. \nyou can add your own prefabs to debug panel - derive
+      their scripts from DebugPanelItemView.\nSoon old debug panel will be removed"
+    guid: 8ba71d47-fcdb-4ca8-ad09-0ccaad647ca8
+  - AffectedModule: ECS_LOCATIONS
+    whatsChanged: change LocationsView.GetPrefab() behaviour
+    upgradeGuide: 'now it returns strictly only prefabs and only if they exist and
+      mode is PrefabInstantiation.
+
+      Use shownLocationView to get current location
+      instance'
+    guid: 9c23e0ae-11dc-472f-b910-8920aa8ba3b5
+  - AffectedModule: ALL
+    whatsChanged: unity updated to 2019.3.13f1
+    upgradeGuide: 
+    guid: eaeffd11-75c7-42a2-92ac-1c08aa7b57d6
+  - AffectedModule: ALL
+    whatsChanged: FGT wizard added - it will ask you questions about all FGT functionality
+      you may want. Then it will add corresponding FGT modules
+    upgradeGuide: 
+    guid: ff4a353b-2c35-4462-a40c-bc528844ee9a
+  - AffectedModule: ECS_LOCATIONS
+    whatsChanged: you can now loop locatons
+    upgradeGuide: 
+    guid: 9b8a3399-34b0-42a9-9826-56ba53c61def
+  - AffectedModule: EDITOR_TOOLS
+    whatsChanged: you can now find missing scripts from this module ui
+    upgradeGuide: 
+    guid: 699bf939-d372-44d9-b04f-be1bdf7ffd8d
+  - AffectedModule: ECS_LOCATIONS
+    whatsChanged: ILocationDependant removed, had ambigious meaning
+    upgradeGuide: use ILocationSet or ILocationChanged instead
+    guid: fc6c2f17-a19b-44bc-bd57-5b0e1c80ac1c
+  - AffectedModule: ALL
+    whatsChanged: you can now name list elements in inspector
+    upgradeGuide: just CollectionElementTitle attribute, see example in SpriteCharacters.cs
+    guid: 0fa996ab-5110-456b-bde0-66df5d6f4657
+  - AffectedModule: ALL
+    whatsChanged: SETTINGS module added
+    upgradeGuide: use it for settings windows in all games
+    guid: caae40d7-73bf-475a-a6d7-44094aa5f9f3
+  - AffectedModule: ALL
+    whatsChanged: '''IOS not using encrypiton'' checkbox  to BUILD_MODES module'
+    upgradeGuide: check it and appstore will no longer ask you whether app uses encryption
+    guid: 846e6069-247e-4fc5-bcac-3f9e3c786b06
+  - AffectedModule: ECS_LOCATIONS
+    whatsChanged: you can now use and repeat locations in any order
+    upgradeGuide: override LocationsController.GetSourceLocationInd to set locations
+      usage order
+    guid: d2ce2521-bea5-4391-90d7-4c3bd65b717d
+  - AffectedModule: PUSH
+    whatsChanged: you can now ask notification permissions not at start, but where
+      needed
+    upgradeGuide: 
+    guid: c846ce00-2cec-4ea0-9298-bfaf974afa16
+  - AffectedModule: HAPTIC
+    whatsChanged: you can now select haptics power
+    upgradeGuide: 
+    guid: 2d659910-45cf-45c4-930a-fc695cf72bf2
+  - AffectedModule: ECS_GAMEROOT
+    whatsChanged: ecs package updated
+    upgradeGuide: "you have to update \ncom.unity.entities      to    0.11.1-preview.4\ncom.unity.burst         
+      to    1.3.3"
+    guid: 349eb164-39b9-4b8d-9973-582261871061
+  - AffectedModule: PUSH
+    whatsChanged: you can now use UTF32 in hex form (0x2ac34) in notifications
+    upgradeGuide: 
+    guid: ab8e6be1-97e7-4870-99ef-910dc39cb5c2
+  - AffectedModule: ECSGame
+    whatsChanged: revert ecs
+    upgradeGuide: 'com.unity.entities to 0.1.1-preview
+
+      com.unity.burst to
+      1.2.3'
+    guid: 94418ca6-017b-4a4a-8e1e-b6d5503a8580
+  - AffectedModule: ECSGame
+    whatsChanged: migration module is now optional
+    upgradeGuide: 
+    guid: 89413691-0260-4d8e-972a-169caa0f1f92
+  - AffectedModule: SETTINGS
+    whatsChanged: you can have default settings window in release - we added nice
+      graphics to FGT
+    upgradeGuide: 
+    guid: 917b152c-9142-441f-8834-fd41664cae06
+  - AffectedModule: ALL
+    whatsChanged: you can now show text message to player (MessageWindow.Show(text)).
+      Customize window in WINDOWS module
+    upgradeGuide: 
+    guid: c1152c73-8a44-4977-85fe-eba3aa0ba2d9
+  - AffectedModule: ADS
+    whatsChanged: now we show special message window when no ads available
+    upgradeGuide: "always allow player to press 'show ads' button. \nSometimes player
+      will see message 'no ads available'.\nSometimes player will see ads.\nYou can
+      test it turning 'no ads' debug setting from debug panel or FGT UI"
+    guid: 46e2ff23-e3b7-4ef0-8e9b-8c4157eff835
+  - AffectedModule: ALL
+    whatsChanged: SHARE module added. Just call ShareManager.Share(text)
+    upgradeGuide: 
+    guid: f7a0e4dc-ac44-48fa-99dc-fc86b6b15ad6
+  - AffectedModule: ECS_BONUS
+    whatsChanged: 'bonus events activation now have ''bool multiplied'' parameter '
+    upgradeGuide: add 'bool multiplied' to activation methods
+    guid: f1b604cc-cfd6-4e0b-a710-a908fcc54d6e
+  - AffectedModule: ECS_BONUS
+    whatsChanged: view scripts now have SetState instead of SetShown
+    upgradeGuide: 'what was ''shown'' now have ''appeared'' state,
+
+      Its when
+      player can press it.
+
+      ''active'' state is when bonus is active'
+    guid: 0059d516-cb3c-4d6a-9ff4-0e6879a46e57
+  - AffectedModule: ALL
+    whatsChanged: You can now upload builds from cloud to appstore automatically,
+      use STORE_UPLOAD module
+    upgradeGuide: 
+    guid: ce4e2d51-d34d-45e3-9da6-8e419bfe8f7f
+  - AffectedModule: DEBUG_CONFIG
+    whatsChanged: lists and classes are now supported
+    upgradeGuide: 
+    guid: 8c430192-94ba-4ca2-a606-4797ac2515e5
+  - AffectedModule: ALL
+    whatsChanged: quests module added
+    upgradeGuide: 
+    guid: 11fa4e72-ae09-41e2-8e54-c1a60c6ac092
+  - AffectedModule: ADS
+    whatsChanged: you can now remove interstitials with special IAP
+    upgradeGuide: IAPManager.adsType replaced with GetUsedAdsSourceSDK()
+    guid: 6210e6d7-7a6e-4af1-9cb3-0bdc72045338
+  - AffectedModule: IAP
+    whatsChanged: consumables and nonconsumables now have different model. You can
+      get 'bool owned' for nonconsumable
+    upgradeGuide: 
+    guid: f5078198-2418-472e-8791-3e9904dc81a1
+  - AffectedModule: ECSGame
+    whatsChanged: ViewControllers added, they're like Controllers, but for views
+    upgradeGuide: 
+    guid: 87e04197-fec1-4d0f-978d-b998a885d9b1
+  - AffectedModule: ALL
+    whatsChanged: InfoNotification module added for showing info texts
+    upgradeGuide: 
+    guid: 86b3d77c-2986-4b18-8080-7c83ce67a50c
+  - AffectedModule: ALL
+    whatsChanged: InternetProgressView added (use it to show some process in progress)
+    upgradeGuide: 'put InternetProgressView to each WatchAdButton->notAvailable.
+
+      and
+      to any button with not instant action.
+
+      ads and iap can simulate internet
+      delay now - common tab -> internet'
+    guid: a87691a7-de09-4472-a364-e6e4674c3c76
+  - AffectedModule: IAP
+    whatsChanged: added reminder to inc game version when adding first iap
+    upgradeGuide: "go to IAP module UI, \nset first game version for some old version
+      if you already increased it"
+    guid: 1d7d3af5-c66c-443a-bf55-430c160b2d86
+  - AffectedModule: APPS_FLYER
+    whatsChanged: 'breaking change. To upgrade uppsflyer:'
+    upgradeGuide: "turn off APPS_FLYER module\n-----\nremove Assets/AppsFlyer folder\n-----\nremove
+      files:\nAssets/Plugins/AppsFlyer.cs\nAssets/Plugins/AFInAppEvents.cs\nAssets/Plugins/AppsFlyerTrackerCallbacks.cs\nAssets/Plugins/Android/AppsFlyerAndroidPlugin.jar
+      \nAssets/Plugins/Android/AF-Android-SDK.jar \nAssets/Plugins/Android/installreferrer-1.0.aar\nAssets/Plugins/iOS/AppsFlyerAppController.mm\nAssets/Plugins/iOS/AppsFlyerCrossPromotionHelper.h\nAssets/Plugins/iOS/AppsFlyerDelegate.h\nAssets/Plugins/iOS/AppsFlyerDelegate.mm\nAssets/Plugins/iOS/AppsFlyerLinkGenerator.h\nAssets/Plugins/iOS/AppsFlyerShareInviteHelper.h\nAssets/Plugins/iOS/AppsFlyerTracker.h\nAssets/Plugins/iOS/AppsFlyerWrapper.h\nAssets/Plugins/iOS/AppsFlyerWrapper.mm\nAssets/Plugins/iOS/libAppsFlyerLib.a\n-----\nfrom
+      Assets/Plugins/Android/AndroidManifest.xml remove following lines:\n    <!--
+      AppsFlyer -->\n    <receiver android:name=\"com.appsflyer.MultipleInstallBroadcastReceiver\"
+      android:exported=\"true\">\n      <intent-filter>\n        <action android:name=\"com.android.vending.INSTALL_REFERRER\"
+      />\n      </intent-filter>\n    </receiver>\n-----\nin APPS_FLYER module press
+      'download' button"
+    guid: f0cfcbf2-e173-4710-8c91-37e3fb2d7dd9
+  - AffectedModule: ALL
+    whatsChanged: apple app id (10-digit number) duplicates removed
+    upgradeGuide: "please enter this id again in any plugin that uses it. \nIt will
+      appear in all other places automatically"
+    guid: c0e85d4c-ac79-43c0-8d73-e771e23ca1b3
+  - AffectedModule: ALL
+    whatsChanged: LOCALIZATION module added
+    upgradeGuide: 
+    guid: a0656a3e-e813-4e07-b555-2733db32555d
+  - AffectedModule: ALL
+    whatsChanged: you can now upgrade to Unity 2021.1.3f1
+    upgradeGuide: "If you use IAP Unity will update it from 2.x to 3.x.\nIt will
+      produce compile errors, you have to resolve them manually as follows:\n 1.
+      Move IAPProductCatalog.json and BillingMode.json\n\tFROM: Assets/Plugins/UnityPurchasing/Resources/\n\tTO:
+      Assets/Resources/\n 2. Move AppleTangle.cs and GooglePlayTangle.cs\n\tFROM:
+      Assets/Plugins/UnityPurchasing/generated\n\tTO: Assets/Scripts/UnityPurchasing/generated.\n3.
+      Remove all remaining Asset Store plugin folders and files in Assets/Plugins/UnityPurchasing
+      from your project."
+    guid: f6af3965-a4b5-4cc1-b1a3-d1baddcec044
+  - AffectedModule: ALL
+    whatsChanged: FGTGameRoot now exists in any game, regardless ECS or not
+    upgradeGuide: 
+    guid: ead06106-f842-4a82-9c3d-294bb51cfc0f
+  - AffectedModule: ALL
+    whatsChanged: Utils module now sets 30 FPS on android and 60 FPS on IOS
+    upgradeGuide: feel free to change those settings in Utils module UI
+    guid: 90b94331-39da-42cb-bc6d-324e07703a69
+  - AffectedModule: ADS
+    whatsChanged: Now ads are omitted while tutorial is playing. You can override
+      it in AdsManager.turnOffAdsInTutorial
+    upgradeGuide: 
+    guid: 04a804cf-49fe-4b83-9e9b-9c4f77878a72
+  - AffectedModule: GDPR
+    whatsChanged: "\u0414\u043E\u0431\u0430\u0432\u0438\u043B \u043E\u043F\u0446\u0438\u044E
+      \u0432 \u043D\u0430\u0441\u0442\u0440\u043E\u0439\u043A\u0430\u0445 \u043C\u043E\u0434\u0443\u043B\u044F
+      open MainMenu onClose \u0441 \u0434\u0435\u0444\u043E\u043B\u0442\u043D\u044B\u043C
+      \u0437\u043D\u0430\u0447\u0435\u043D\u0438\u0435\u043C true"
+    upgradeGuide: 
+    guid: 4ac6590f-de0a-453e-a59e-a9986687cc24

@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c87bf50a16c4494691f21e050526dfa, type: 3}
+  m_Name: DebugPanelSettings
+  m_EditorClassIdentifier: 
+  openPanelPresses: 3
+  openPanelPressDuration: 2
+  passwordIfNotDevelop: 1
+  password: 2020
+  startsShown: 0
+  disabledModules: []
+  itemViews:
+  - {fileID: 1534816537639975387, guid: 0f7d14e65754f9b44b19afb3167a7b93, type: 3}
+  - {fileID: 1052068896179187760, guid: 7a829a5c3cfcf90498f0f95c5d0a4c28, type: 3}
+  - {fileID: 7501882884403629935, guid: ee214f47b2ff870468f5ea7ec85506fa, type: 3}
+  - {fileID: 9067935044205378058, guid: 9964ea25d0b4a0646a1f4dca1acd6a56, type: 3}
+  - {fileID: 5520358457082950510, guid: 46dc147b98e3bbc4cadeb4cb7bcc5d21, type: 3}
+  - {fileID: 2949780923907032398, guid: 6023c6cf7bcf9424a8dfd2278ed298b7, type: 3}
+  - {fileID: 8670411726876873300, guid: b9da0a76e20adff4883f94d87e82ab8b, type: 3}
+  - {fileID: 6695713674405759478, guid: 5b5f062b43a836347ab19bea168280e3, type: 3}
+  - {fileID: 6907625170526091925, guid: cb6c28d5b5d29cb45b9c2fa1b23fcc01, type: 3}

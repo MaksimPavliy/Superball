@@ -1,0 +1,83 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ce3cf7932cf4284a93b35d82e7308ae, type: 3}
+  m_Name: UpdatesSettings
+  m_EditorClassIdentifier: 
+  completedChanges:
+  - c7b36b81-dea8-4ebc-861b-7a55837f67f5
+  - d5a1faee-9f4c-4471-80e7-0ce5bdf77f22
+  - 553e1ba9-3af1-426c-971a-5f6da1428d73
+  - 5b6392b9-0420-4b64-88c1-518d456e50d1
+  - d131e1e7-4218-4424-9bae-c514a034669c
+  - b813b40b-2591-411b-a10e-d8b72225f3c8
+  - 8422705b-3d6e-4ef8-b5b0-72547bc6564a
+  - 6954e872-8cd1-4fb4-bc1f-ec27e925a81c
+  - f1b604cc-cfd6-4e0b-a710-a908fcc54d6e
+  - 0059d516-cb3c-4d6a-9ff4-0e6879a46e57
+  - f5078198-2418-472e-8791-3e9904dc81a1
+  - 1d7d3af5-c66c-443a-bf55-430c160b2d86
+  - f0cfcbf2-e173-4710-8c91-37e3fb2d7dd9
+  - 9d922771-7dbb-4ea7-bcbc-8fef16a21d1e
+  - b4f9bd07-8203-4f29-811f-c04bdf986b46
+  - ac6c765a-60ee-4dbb-84a8-3562d493d066
+  - d0e6beef-c8e2-4ff7-a351-ae8218e36c30
+  - 5931f410-fdc6-4c4b-beac-9afc7ad9c82f
+  - eefb14de-94f2-4de4-9504-623d242658e2
+  - 4daab187-3cc8-4953-8815-9a3e634a9113
+  - eaa8f830-d343-4dcb-ad17-14298eaf3dfa
+  - 8ad8f50b-1ff4-4d7b-95b7-d7424ca0f040
+  - 5454ec0d-7fb4-41dc-8eb9-860610fce551
+  - fbc35279-01fc-4b08-9d0a-433cb9423fb6
+  - e611d57f-9071-477d-8fc9-2e4bedadf912
+  - bd96e6d7-8092-47e3-a3da-d00cb8d4c0dc
+  - 0d1cdf71-3f26-4424-b506-fbce736ceba7
+  - 2c22d493-531e-48cb-b58a-d0b218a6aa93
+  - 30463a0a-12c6-4fd3-b11b-b61e8b37dc43
+  - d3140f32-cd44-4937-87cd-0ef676dc7059
+  - 0df7dd5a-d247-44f9-b827-869d3fc0fcfc
+  - 9b6e3ebe-d981-4c26-aa83-7d72e8456cd9
+  - 8bc3108b-9deb-4d9b-90d0-8422c7dd3706
+  - 8ba71d47-fcdb-4ca8-ad09-0ccaad647ca8
+  - 9c23e0ae-11dc-472f-b910-8920aa8ba3b5
+  - eaeffd11-75c7-42a2-92ac-1c08aa7b57d6
+  - ff4a353b-2c35-4462-a40c-bc528844ee9a
+  - 9b8a3399-34b0-42a9-9826-56ba53c61def
+  - 699bf939-d372-44d9-b04f-be1bdf7ffd8d
+  - fc6c2f17-a19b-44bc-bd57-5b0e1c80ac1c
+  - 0fa996ab-5110-456b-bde0-66df5d6f4657
+  - caae40d7-73bf-475a-a6d7-44094aa5f9f3
+  - 846e6069-247e-4fc5-bcac-3f9e3c786b06
+  - d2ce2521-bea5-4391-90d7-4c3bd65b717d
+  - c846ce00-2cec-4ea0-9298-bfaf974afa16
+  - 2d659910-45cf-45c4-930a-fc695cf72bf2
+  - 349eb164-39b9-4b8d-9973-582261871061
+  - ab8e6be1-97e7-4870-99ef-910dc39cb5c2
+  - 94418ca6-017b-4a4a-8e1e-b6d5503a8580
+  - 89413691-0260-4d8e-972a-169caa0f1f92
+  - 917b152c-9142-441f-8834-fd41664cae06
+  - c1152c73-8a44-4977-85fe-eba3aa0ba2d9
+  - 46e2ff23-e3b7-4ef0-8e9b-8c4157eff835
+  - f7a0e4dc-ac44-48fa-99dc-fc86b6b15ad6
+  - ce4e2d51-d34d-45e3-9da6-8e419bfe8f7f
+  - 8c430192-94ba-4ca2-a606-4797ac2515e5
+  - 11fa4e72-ae09-41e2-8e54-c1a60c6ac092
+  - 6210e6d7-7a6e-4af1-9cb3-0bdc72045338
+  - 87e04197-fec1-4d0f-978d-b998a885d9b1
+  - 86b3d77c-2986-4b18-8080-7c83ce67a50c
+  - a87691a7-de09-4472-a364-e6e4674c3c76
+  - c0e85d4c-ac79-43c0-8d73-e771e23ca1b3
+  - a0656a3e-e813-4e07-b555-2733db32555d
+  - f6af3965-a4b5-4cc1-b1a3-d1baddcec044
+  - 04a804cf-49fe-4b83-9e9b-9c4f77878a72
+  - ead06106-f842-4a82-9c3d-294bb51cfc0f
+  - 90b94331-39da-42cb-bc6d-324e07703a69
+  - 4ac6590f-de0a-453e-a59e-a9986687cc24

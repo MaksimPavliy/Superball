@@ -1,0 +1,57 @@
+#######      FGT generated      #######
+.gradle/
+Screenshots/
+LocalSettings/
+LocalSettings.meta
+lfs/
+ArtSourceSpritesPostProcessed/
+Recordings/
+
+#######    Unity generated      #######
+Temp/
+Library/
+Logs/
+UserSettings/
+
+#######          Builds         #######
+[Bb]uild/
+[Bb]uilds/
+*.apk
+*.obb
+*.exe
+*.aab
+
+####### Visual Studio generated #######
+JetBrains/
+JetBrains.meta
+ExportedObj/
+obj/
+.vs/
+.vscode/
+*.svd
+*.userprefs
+/*.csproj
+*.pidb
+*.suo
+/*.sln
+*.user
+*.unityproj
+*.booproj
+*.opensdf
+*.sdf
+*.DotSettings
+Assets/UnityVS/Editor/UnityVS.VersionSpecific.dll
+Assets/UnityVS/Editor/UnityVS.VersionSpecific.dll.meta
+Assets/UnityVS/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll
+Assets/UnityVS/Editor/SyntaxTree.VisualStudio.Unity.Messaging.dll
+.idea/
+.vsconfig
+
+#######       OS generated      #######
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
